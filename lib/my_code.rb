@@ -11,7 +11,7 @@ end
 
 
 #the video walkthrough link was unavailable, but I was able to find this solution online
-#is there a way to solve
+#is there a way to solve this without the splat operator?
 def reduce(array, *starting)
     if starting[0]
       value = starting[0]
@@ -21,7 +21,7 @@ def reduce(array, *starting)
       count = 1
     end
 
-    while count < array.count do
+    while count < array.length do
       value =  yield(value,array[count])
       count+=1
     end
