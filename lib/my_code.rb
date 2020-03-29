@@ -11,7 +11,7 @@ end
 
 
 #the video walkthrough link was unavailable, but I was able to find this solution online
-#is there a way to solve 
+#is there a way to solve
 def reduce(array, *starting)
     if starting[0]
       value = starting[0]
