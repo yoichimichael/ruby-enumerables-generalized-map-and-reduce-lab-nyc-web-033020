@@ -13,10 +13,19 @@ def reduce(array, starting_point = 0)
   total = starting_point
   i = 0
   while i < array.length do
-    if array[i].class = Integer
-      total += yield(0 , array[i])
-    elsif 
+
+    total = yield(array[i], true)
+
     i += 1
   end
   total
 end
+
+#source_array = [1,2,3]
+#starting_point = 100
+#reduce(source_array, starting_point){|memo, n| memo + n}
+
+#source_array = [1, 2, true, "razmatazz"]
+#reduce(source_array) do |memo, n|
+#  memo && n
+#end
