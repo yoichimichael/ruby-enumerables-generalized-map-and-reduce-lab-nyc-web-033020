@@ -9,11 +9,14 @@ def map(array)
   new_array
 end
 
+
+#the video walkthrough link was unavailable, but I was able to find this solution online
+#is there a way to solve 
 def reduce(array, *starting)
     if starting[0]
       value = starting[0]
       count = 0
-      else
+    else
       value = array[0]
       count = 1
     end
@@ -24,11 +27,3 @@ def reduce(array, *starting)
     end
     value
 end
-#source_array = [1,2,3]
-#starting_point = 100
-#reduce(source_array, starting_point){|memo, n| memo + n}
-
-#source_array = [1, 2, true, "razmatazz"]
-#reduce(source_array) do |memo, n|
-#  memo && n
-#end
