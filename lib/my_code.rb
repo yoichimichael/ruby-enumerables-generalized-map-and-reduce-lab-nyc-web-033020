@@ -9,7 +9,7 @@ def map(array)
   new_array
 end
 
-def reduce(array, starting = 0)
+def reduce(array, *starting)
     if starting[0]
       value = starting[0]
       count = 0
